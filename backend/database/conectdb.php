@@ -7,7 +7,11 @@ spl_autoload_register(function ($classname) {
 
 });
 
-$db = new Database($config['DB'], $_ENV['MYSQLUSER'] ?? 'root',$_ENV['MYSQLPASSWORD'] ??  'kLbpvikcnCHjfWHVJtuCqdTbIgUGnJsj');
+$db = new Database(
+    $config['DB'], 
+    $_ENV['DB_USERNAME'] ?? 'root',
+    $_ENV['DB_PASSWORD'] ?? ''
+);
 
 
 ?>
