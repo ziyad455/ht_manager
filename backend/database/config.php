@@ -1,9 +1,9 @@
 <?php
 return [
   'DB' => [
-    'host' => 'centerbeam.proxy.rlwy.net',
-    'port' => 49061,
-    'dbname' => 'railway',
+    'host' => $_ENV['MYSQLHOST'] ?? 'localhost',
+    'port' => $_ENV['MYSQLPORT'] ?? 3306,
+    'dbname' => $_ENV['MYSQLDATABASE'] ?? 'railway',
     'charset' => 'utf8mb4'
   ]
 ];
