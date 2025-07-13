@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $allowed_extensions = array('jpg', 'jpeg', 'png', 'gif', 'webp', 'bmp', 'svg');
 
         // File handling
-        $targetDir = "/../../../rooms/";
+        $targetDir ="https://htmanager-production.up.railway.app"."/../../../rooms/";
         $fileName = basename($_FILES["room-photo"]["name"]);
         $fileType = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
 
