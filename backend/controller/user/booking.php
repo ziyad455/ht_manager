@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ['not available', $room_id]
         );
 
-        header('Location: ../../../../ht_manager/frontend/user/book.php?success=Booking successful');
+        header('Location: ../../../frontend/user/book.php?success=Booking successful');
         exit();
     } catch (Exception $e) {
         // Log the error message for debugging
