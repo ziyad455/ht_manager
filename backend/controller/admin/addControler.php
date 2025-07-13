@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 require "../../database/conectdb.php";
 require "../../../frontend/helper/other/Room.php";

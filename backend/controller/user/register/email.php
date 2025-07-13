@@ -1,10 +1,9 @@
 <?php 
 session_start();
-require '../../../../frontend/helper/other/user_classe.php';
 if (isset($_SESSION['error'])) {
     unset($_SESSION['error']);
 }
-
+require '../../../../frontend/helper/other/user_classe.php';
 require '../../../database/conectdb.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try{
