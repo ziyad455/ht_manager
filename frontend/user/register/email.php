@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +44,6 @@
           <div id="email-error" class="text-red-500 text-sm mb-4 hidden"></div>
           <div class="text-red-500 text-sm mb-4 ">
             <?php
-              session_start();
               if (isset($_SESSION['error'])) {
                 echo $_SESSION['error'];
                 unset($_SESSION['error']);
